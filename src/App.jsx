@@ -1,30 +1,49 @@
 
-import Hello from "./Hello"
-import Button from './Button'
+// import Hello from "./Hello"
+// import Button from './Button'
 
-function App(){
+import ShowEWC from "./ShowEWC";
 
-  const hobbies = ["Reading" , "Coding",  "Traveling"]
+// function App(){
 
-  function Message(){
-    alert("Hello from message")
-  }
+//   const hobbies = ["Reading" , "Coding",  "Traveling"]
 
-  function ByeMessage(){
-    alert("Bye from message")
-  }
+//   function Message(){
+//     alert("Hello from message")
+//   }
 
-return (
-  <>
-  <Hello name="Rizwan Ali" age={25} city="Lahore" hobbies={hobbies}/>
-  <Button label="Click Me" handleClick={Message}/>
-  <br/>
-  <br/>
-  <Button label="Just Click" handleClick={ByeMessage}/>
+//   function ByeMessage(){
+//     alert("Bye from message")
+//   }
+
+// return (
+//   <>
+//   <Hello name="Rizwan Ali" age={25} city="Lahore" hobbies={hobbies}/>
+//   <Button label="Click Me" handleClick={Message}/>
+//   <br/>
+//   <br/>
+//   <Button label="Just Click" handleClick={ByeMessage}/>
   
-  </>
-)
+//   </>
+// )
+// }
+
+
+// export default App
+
+
+
+
+import GrandParent from "./GrandParent";
+function App() {
+
+
+  return (
+    <>
+   < GrandParent />
+    </>
+  )
 }
 
+export default App;
 
-export default App
