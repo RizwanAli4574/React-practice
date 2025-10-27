@@ -2,10 +2,10 @@ import { useRef, useState, useEffect } from "react";
 
 function UseReffExample() {
   const [name, setName] = useState("");
-  const renders = useRef(0); // ye ek hidden counter hai
+  const renders = useRef(0); 
 
   useEffect(() => {
-    renders.current = renders.current + 1; // increase karega, screen pe show nahi hoga
+    renders.current = renders.current + 1; 
   });
 
   return (

@@ -1,4 +1,4 @@
-function Bye(){
+function ListRandringExample(){
 
 const users = [
 {firstName : "Rizwan" , lastName : "Ali" , age : 26} ,
@@ -24,4 +24,4 @@ const fullName = (users) =>{
     )
 }
 
-export default Bye
+export default ListRandringExample
