@@ -48,12 +48,13 @@
 
 // import Counter from "./UseCallback/Counter";
 import Parent from "./UseCallback/Parent";
+import UseLayOut from "./UseLayoutE/useLayoutE";
 function App() {
 
 
   return (
     <>
-   < Parent />
+   < UseLayOut />
     </>
   )
 }
