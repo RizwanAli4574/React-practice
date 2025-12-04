@@ -2,27 +2,36 @@ import { useLayoutEffect , useRef } from "react"
 
 function UseLayOut(){
 
-    const boxRun = useRef(null)
+    const chatruf = useRef(null)
 
 useLayoutEffect( () => {
-    const el = boxRun.current
-
-    const width = el.offsetWidth;
-
-    el.style.transform = `translateX(${width}px)`
+    chatruf.current.scrollTop = chatruf.current.scrollHeight;
 } , [])
 
  return (
    
-        <div ref={boxRun} style={{ padding: "30px" , background: "skyblue" , transition: "3s"}}> 
-        Hello World
+        <div ref={chatruf} style={{ 
+            height: "150px" ,
+            width: "200px" ,
+            border: "1px solid #ccc" , 
+            overflowY: "scroll"}}> 
+        <p>Hello</p>
+        <p>How are you</p>
+        <p>Welcome to chat</p>
+        <p>Welcome</p>
+        <p>Testing...</p>
+        <p>Hello</p>
+        <p>How are you</p>
+        <p>Welcome to chat</p>
+        <p>Welcome</p>
+        <p>Testing...</p>
         </div>
         
     
  )
 }
 
-// export default UseLayOut
+export default UseLayOut
 
 // import { useLayoutEffect , useRef } from "react"
 
